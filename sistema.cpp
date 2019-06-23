@@ -57,8 +57,6 @@ void Sistema::operarSistema(){
 	fstream dadosFuncionarios;
 	dadosAnimais.open("animais.csv");
 	dadosFuncionarios.open("funcionarios.csv");
-	map animais;
-	map funcionarios;
 
 	switch(this->selecaoAtual){
 		case 0:
@@ -71,22 +69,46 @@ void Sistema::operarSistema(){
 			switch(this -> selecaoClasses){
 				case 1:
 					animal = new Anfibio();
+					mapAnfibio.insert(pair<int, Anfibio>(posicaoAnf, animal));
+					break;
 				case 2:
 					animal = new Ave();
+					mapAve.insert(pair<int, Ave>(posicaoAve, animal));
+					break;
 				case 3:
 					animal = new Mamifero();
+					mapMamifero.insert(pair<int, Mamifero>(posicaoMan, animal));
+					break;
 				case 4:
 					animal = new Reptil();
+					mapReptil.insert(pair<int, Reptil>(posicaoRep, animal));
+					break;
 				default:
 			}
-			
+			break;
 		case 2:
-
+			switch(){
+				case 1: mapAnfibio.erase(posicaoAnf);
+					break;
+				case 2: mapAve.erase(posicaoAve);
+					break;
+				case 3: mapMamifero.erase(posicaoMan);
+					break;
+				case 4: mapReptil.erase(posicaoRep);
+					break;
+			}
+			break;
 		case 3:
 
 		case 4:
 
-		case 5:
+		case 5: switch(){
+				case 1: mapTratador.insert(pair<int, Tratador>(posicaoTrat, funcionario);
+					break;
+				case 2: mapVeterinario.insert(pair<int, Veterinario>(posicaoVet, funcionario);
+					break;
+			}
+			break;
 
 		default:
 			cout << "Seleção inválida. Por favor, selecione uma opção válida." << endl;
