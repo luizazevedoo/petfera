@@ -4,7 +4,7 @@
 #include "veterinario.h"
 #include "tratador.h"
 
-Ave::Ave(Veterinario veterinario, Tratador tratador, int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo, double tamanho_bico, double envergadura_asas) : Animal(veterinario, tratador, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo){
+Ave::Ave():Animal(){
 	this->tamanho_bico = tamanho_bico;
 	this->envergadura_asas = envergadura_asas;
 };
