@@ -14,9 +14,8 @@ class Animal{
 		Veterinario veterinario;
 		Tratador tratador;	
 	public:
-		Animal(Veterinario veterinario, Tratador tratador, int id = 0, string classe = "", string nome_cientifico = "", char sexo = '', double tamanho = 0, string dieta = "", string nome_batismo = "");
-		~Animal();
-		virtual void consultar_animal() = 0;
+		virtual void consultar() = 0;
+		Animal(Veterinario veterinario, Tratador tratador, int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo);
 		void setId(int id);
 		int getId();
 		void setClasse(string classe);
@@ -34,6 +33,7 @@ class Animal{
 		void setTratador(TRATADOR tratador);
 		Tratador getTratador();
 		void setNome_batismo(string nome_batismo);
+		~Animal();
 		
 };
 
