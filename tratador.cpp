@@ -1,4 +1,8 @@
-#include <tratador.h>
+#include <iostream>
+#include "tratador.h"
+#include "funcionario.h"
+
+using namespace std;
 
 Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, int m_nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade){
 	this->m_nivel_de_seguranca = m_nivel_de_seguranca;

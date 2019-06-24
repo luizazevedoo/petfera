@@ -2,14 +2,6 @@
 #define SISTEMA_H
 
 /**@brief classe referente à manipulação de informações, cadastro e venda de animais*/
-#include <map>
-#include "animal.h"
-#include "ave.h"
-#include "anfibio.h"
-#include "reptil.h"
-#include "mamifero.h"
-#include "manipular_arquivos.h"
-
 class Sistema{
 private:
 	/**@brief Guarda a seleção do menu*/
