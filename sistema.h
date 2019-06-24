@@ -16,6 +16,7 @@ private:
 	int selecaoAtual;
 	int selecaoClasse;
 	int selecaoFuncionarios;
+	int selecaoConsulta;
 	int posicaoAnf;
 	int posicaoAve;
 	int posicaoMam;
