@@ -1,13 +1,6 @@
 #include <funcionario.h>
 
-Funcionario::Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade){
-	this->id = id;
-	this->nome = nome;
-	this->cpf = cpf;
-	this->idade = idade;
-	this->tipo_sanguineo = tipo_sanguineo;
-	this->fator_rh = fator_rh;
-	this->especialidade = especialidade;
+Funcionario::Funcionario(){
 }
 
 void Funcionario::setId(int id){
