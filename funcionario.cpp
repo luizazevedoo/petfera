@@ -62,5 +62,9 @@ void Funcionario::setEspecialidade(string especialidade){
 	this->especialidade = especialidade;
 }
 
+string Funcionario::getEspecialidade(){
+	return this->especialidade;
+};
+
 Funcionario::~Funcionario(){
 }
