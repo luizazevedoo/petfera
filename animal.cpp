@@ -1,8 +1,12 @@
-#include <animal.h>
+#include "animal.h"
+#include "veterinario.h"
+#include "tratador.h"
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-Animal::Animal(int id, string classe, string nome_cientifico,char sexo, double tamanho, string dieta, VETERINARIO veterinario, TRATADOR tratador, string nome_batismo){
+Animal::Animal(Veterinario veterinario, Tratador tratador, int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo){
 	this->id = id;
 	this->classe = classe;
 	this->nome_cientifico = nome_cientifico;
@@ -62,7 +66,7 @@ string Animal::getDieta(){
 	return this->dieta;
 };
 
-void Animal::setVeterinario(VETERINARIO veterinario){
+void Animal::setVeterinario(Veterinario veterinario){
 	this->veterinario = veterinario;
 };
 
@@ -70,7 +74,7 @@ Veterinario Animal::getVeterinario(){
 	return this->veterinario;
 };
 
-void Animal::setTratador(TRATADOR tratador){
+void Animal::setTratador(Tratador tratador){
 	this->tratador = tratador;
 };
 

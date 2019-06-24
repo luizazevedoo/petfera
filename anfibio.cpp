@@ -1,6 +1,12 @@
-#include <anfibio.h>
+#include "anfibio.h"
+#include "animal.h"
+#include "veterinario.h"
+#include "tratador.h"
+#include <iostream>
 
-Anfibio::Anfibio(Veterinario veterinario, Tratador tratador, int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo, int total_mudas, date ultima_muda): Animal(veterinario, tratador, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo){
+using namespace std;
+
+Anfibio::Anfibio(Veterinario veterinario, Tratador tratador, int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, string nome_batismo, int total_mudas, string ultima_muda): Animal(veterinario, tratador, id, classe, nome_cientifico, sexo, tamanho, dieta, nome_batismo){
 	this->total_mudas = total_mudas;
 	this->ultima_muda = ultima_muda;
 };
@@ -13,10 +19,10 @@ int Anfibio::getTotal_mudas(){
 	return this->total_mudas;
 };
 
-void consultar(){
+void Anfibio::consultar(){
 	cout << "Id: " << this->id << endl;
 	cout << "Classe: " << this->classe << endl;
-	cout << "Nome científico: " <<this->nome_cientifico << endl;
+	cout << "Nome científico: " << this->nome_cientifico << endl;
 	//precisa terminar de implementar e incluir em todas as outras classes.
 }
 
