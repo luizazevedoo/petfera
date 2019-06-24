@@ -1,8 +1,7 @@
 ##include <veterinario.h>
 using namespace std;
 
-Veterinario::Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fator_rh, string especialidade, string m_crmv): Funcionario(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade){
-	this->m_crmv = m_crmv;
+Veterinario::Veterinario():Funcionario(){
 }
 
 void Veterinario::setM_crmv(string m_crmv){
